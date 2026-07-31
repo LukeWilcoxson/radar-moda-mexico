@@ -42,6 +42,14 @@ function StatusPill({ type = 'neutral', children }) {
   return <span className={`pill pill-${type}`}>{children}</span>;
 }
 
+function brandCategories(brand) {
+  return brand.categoryKeys || [brand.categoryKey];
+}
+
+function brandMatchesFilter(brand, activeFilter) {
+  return activeFilter === 'all' || brandCategories(brand).includes(activeFilter);
+}
+
 function BrandCard({ brand }) {
   const assets = assetCache[brand.id] || {};
   const history = historyManifest[brand.id] || [];
@@ -83,7 +91,6 @@ function BrandCard({ brand }) {
         <div className="pills">
           <StatusPill type={history.length ? 'good' : 'warn'}>{history.length ? 'Historial visual' : 'Sin historial'}</StatusPill>
           {brand.badge ? <StatusPill type="coco">{brand.badge}</StatusPill> : null}
-          <StatusPill type={adsUrl ? 'good' : 'neutral'}>{adsUrl ? 'Ads oficiales' : 'Ads pendientes'}</StatusPill>
         </div>
 
         {history.length > 1 ? (
@@ -186,7 +193,7 @@ function App() {
 
   const filteredBrands = useMemo(() => {
     return brands.filter((brand) => {
-      const matchesFilter = activeFilter === 'all' || brand.categoryKey === activeFilter;
+      const matchesFilter = brandMatchesFilter(brand, activeFilter);
       const matchesQuery = brand.name.toLowerCase().includes(query.trim().toLowerCase());
       return matchesFilter && matchesQuery;
     });
@@ -196,9 +203,9 @@ function App() {
     const withHistory = brands.filter((brand) => historyManifest[brand.id]?.length).length;
     return {
       total: brands.length,
-      mexican: brands.filter((brand) => brand.categoryKey === 'mexican').length,
-      international: brands.filter((brand) => brand.categoryKey === 'international').length,
-      emerging: brands.filter((brand) => brand.categoryKey === 'emerging').length,
+      mexican: brands.filter((brand) => brandCategories(brand).includes('mexican')).length,
+      international: brands.filter((brand) => brandCategories(brand).includes('international')).length,
+      emerging: brands.filter((brand) => brandCategories(brand).includes('emerging')).length,
       withHistory
     };
   }, []);
@@ -210,7 +217,7 @@ function App() {
         <nav>
           <a href="#radar">Radar</a>
           <a href="#sugerir">Sugerir marca</a>
-          <a href="#cocoloco">Coco Loco</a>
+          <a href="https://cocoloco.mx/collections/lo-mas-chido" target="_blank" rel="noreferrer">Coco Loco</a>
         </nav>
       </header>
 
