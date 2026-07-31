@@ -291,8 +291,14 @@ input { width: min(320px, 100%); padding: 11px 15px; outline: none; }
 }
 .lead-panel h2 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 3.4rem); }
 .lead-panel p { margin: 0; color: #dfcab0; }
-.lead-panel form { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.lead-panel small { display: block; margin-top: 10px; color: #a99c8e; }
+.lead-panel form { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; max-width: 470px; }
 .lead-panel button { cursor: pointer; }
+.lead-panel button:disabled { opacity: 0.65; cursor: wait; }
+.hp-field { display: none; }
+.form-message { flex-basis: 100%; text-align: right; font-size: 0.86rem; line-height: 1.35; }
+.form-success { color: #8be3b2 !important; }
+.form-error { color: #ffb35c !important; }
 
 .footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .footer-grid h3 { color: #ffd394; margin: 0 0 8px; }
@@ -305,7 +311,8 @@ input { width: min(320px, 100%); padding: 11px 15px; outline: none; }
   .controls { position: static; align-items: stretch; flex-direction: column; }
   input { width: 100%; }
   .topbar { align-items: flex-start; flex-direction: column; }
-  .lead-panel form { justify-content: stretch; }
+  .lead-panel form { justify-content: stretch; max-width: none; }
+  .form-message { text-align: left; }
 }
 
 @media (max-width: 560px) {

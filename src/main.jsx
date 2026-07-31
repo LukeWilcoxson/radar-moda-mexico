@@ -132,6 +132,54 @@ function BrandCard({ brand }) {
   );
 }
 
+function SubscribeForm() {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState('idle');
+  const [message, setMessage] = useState('');
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setStatus('loading');
+    setMessage('');
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email })
+      });
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok || data.success === false) {
+        throw new Error(data.message || 'No se pudo guardar el email.');
+      }
+
+      setStatus('success');
+      setMessage('Listo. Te avisamos cuando salga el próximo drop.');
+      setEmail('');
+    } catch (error) {
+      setStatus('error');
+      setMessage(error.message || 'Algo falló. Intenta de nuevo.');
+    }
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="email"
+        placeholder="tu@email.com"
+        aria-label="Email"
+        value={email}
+        onChange={(event) => setEmail(event.target.value)}
+        required
+      />
+      <input className="hp-field" type="text" name="website" tabIndex="-1" autoComplete="off" aria-hidden="true" />
+      <button disabled={status === 'loading'}>{status === 'loading' ? 'Enviando…' : 'Unirme'}</button>
+      {message ? <p className={`form-message form-${status}`}>{message}</p> : null}
+    </form>
+  );
+}
+
 function App() {
   const [activeFilter, setActiveFilter] = useState('all');
   const [query, setQuery] = useState('');
@@ -219,14 +267,12 @@ function App() {
 
       <section className="lead-panel" id="newsletter">
         <div>
-          <p className="eyebrow">Newsletter</p>
-          <h2>Recibe el radar mensual.</h2>
-          <p>Un resumen corto de marcas, grids, campañas visuales y señales de estilo en México. Sin spam.</p>
+          <p className="eyebrow">Coco Loco</p>
+          <h2>Únete a Coco Loco.</h2>
+          <p>Acceso temprano a drops limitados, restocks y piezas inspiradas en Mexicanismos.</p>
+          <small>Sin spam. Updates ocasionales.</small>
         </div>
-        <form onSubmit={(event) => event.preventDefault()}>
-          <input type="email" placeholder="tu@email.com" aria-label="Email" />
-          <button>Unirme</button>
-        </form>
+        <SubscribeForm />
       </section>
 
       <section className="footer-grid" id="sugerir">
