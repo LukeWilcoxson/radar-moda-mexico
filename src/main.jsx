@@ -9,7 +9,8 @@ const filters = [
   { label: 'Todo', value: 'all' },
   { label: 'Diseño mexicano', value: 'mexican' },
   { label: 'Lujo internacional', value: 'international' },
-  { label: 'Emergentes', value: 'emerging' }
+  { label: 'Emergentes', value: 'emerging' },
+  { label: 'Fotografía', value: 'photography' }
 ];
 
 function formatDate(value) {
@@ -34,7 +35,8 @@ function categoryLabel(key) {
   return {
     mexican: 'Diseño mexicano',
     international: 'Lujo internacional en México',
-    emerging: 'Emergente'
+    emerging: 'Emergente',
+    photography: 'Fotografía de moda'
   }[key] || 'Moda en México';
 }
 
@@ -262,7 +264,7 @@ function App() {
         </div>
         <input
           type="search"
-          placeholder="Buscar marca…"
+          placeholder="Buscar marca o creador…"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
         />

@@ -141,7 +141,16 @@ async function snapshotBrand(page, brand) {
 async function main() {
   await fs.mkdir(outputDir, { recursive: true });
   await fs.mkdir(historyRoot, { recursive: true });
-  const brands = JSON.parse(await fs.readFile(brandsPath, 'utf8'));
+  const allBrands = JSON.parse(await fs.readFile(brandsPath, 'utf8'));
+  const requestedIds = new Set(process.argv.slice(2));
+  const brands = requestedIds.size
+    ? allBrands.filter((brand) => requestedIds.has(brand.id))
+    : allBrands;
+  if (requestedIds.size && brands.length !== requestedIds.size) {
+    const foundIds = new Set(brands.map((brand) => brand.id));
+    const missingIds = [...requestedIds].filter((id) => !foundIds.has(id));
+    throw new Error(`Unknown brand ID(s): ${missingIds.join(', ')}`);
+  }
   const cache = JSON.parse(await fs.readFile(cachePath, 'utf8').catch(() => '{}'));
   const historyManifest = JSON.parse(await fs.readFile(historyManifestPath, 'utf8').catch(() => '{}'));
   const week = new Date().toISOString().slice(0, 10);
