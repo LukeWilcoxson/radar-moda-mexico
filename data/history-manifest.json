@@ -1,11 +1,6 @@
 {
   "carla-fernandez": [
     {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/carla-fernandez.png"
-    },
-    {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
       "image": "/history/2026-08-04/carla-fernandez.png"
@@ -59,14 +54,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/carla-fernandez.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/carla-fernandez.png"
     }
   ],
   "sanchez-kane": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/sanchez-kane.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -121,14 +116,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/sanchez-kane.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/sanchez-kane.png"
     }
   ],
   "yakampot": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/yakampot.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -183,14 +178,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/yakampot.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/yakampot.png"
     }
   ],
   "lorena-saravia": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/lorena-saravia.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -245,14 +240,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/lorena-saravia.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/lorena-saravia.png"
     }
   ],
   "julia-y-renata": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/julia-y-renata.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -307,14 +302,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/julia-y-renata.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/julia-y-renata.png"
     }
   ],
   "benito-santos": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/benito-santos.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -369,14 +364,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/benito-santos.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/benito-santos.png"
     }
   ],
   "pineda-covalin": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/pineda-covalin.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -431,14 +426,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/pineda-covalin.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/pineda-covalin.png"
     }
   ],
   "dior": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/dior.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -493,14 +488,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/dior.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/dior.png"
     }
   ],
   "louis-vuitton": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/louis-vuitton.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -555,14 +550,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/louis-vuitton.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/louis-vuitton.png"
     }
   ],
   "hermes": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/hermes.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -617,14 +612,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/hermes.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/hermes.png"
     }
   ],
   "gucci": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/gucci.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -679,14 +674,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/gucci.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/gucci.png"
     }
   ],
   "saint-laurent": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/saint-laurent.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -741,14 +736,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/saint-laurent.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/saint-laurent.png"
     }
   ],
   "prada": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/prada.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -803,14 +798,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/prada.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/prada.png"
     }
   ],
   "loro-piana": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/loro-piana.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -865,14 +860,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/loro-piana.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/loro-piana.png"
     }
   ],
   "fendi": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/fendi.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -927,14 +922,14 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/fendi.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/fendi.png"
     }
   ],
   "coco-loco": [
-    {
-      "date": "2026-07-30",
-      "label": "30 Jul 2026",
-      "image": "/history/2026-07-30/coco-loco.png"
-    },
     {
       "date": "2026-08-04",
       "label": "04 Aug 2026",
@@ -989,6 +984,11 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/coco-loco.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/coco-loco.png"
     }
   ],
   "santiago-sierra-soler": [
@@ -1021,6 +1021,11 @@
       "date": "2026-10-27",
       "label": "27 Oct 2026",
       "image": "/history/2026-10-27/santiago-sierra-soler.png"
+    },
+    {
+      "date": "2026-11-03",
+      "label": "03 Nov 2026",
+      "image": "/history/2026-11-03/santiago-sierra-soler.png"
     }
   ]
 }
